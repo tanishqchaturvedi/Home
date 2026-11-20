@@ -4,22 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tanishk Chaturvedi — Data &amp; AI Solutions Architect</title>
-  <meta name="description" content="Tanishk Chaturvedi is a Solutions Architect for Data & AI at Fivetran. 5+ years building enterprise data platforms on Snowflake, Databricks, BigQuery and Redshift — and the AI layer on top of them.">
-  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Tanishk Chaturvedi is a Solutions Architect for Data & AI at Fivetran. He builds the data infrastructure enterprise AI runs on.">
+  <meta name="theme-color" content="#e9e6e0">
   <link rel="canonical" href="https://tanishqchaturvedi.github.io/Home/">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tanishk Chaturvedi — Data & AI Solutions Architect">
-  <meta property="og:description" content="I build the data infrastructure that enterprise AI runs on. Solutions Architect at Fivetran.">
+  <meta property="og:description" content="Every AI is only as good as the data beneath it. I build what's beneath it.">
   <meta property="og:url" content="https://tanishqchaturvedi.github.io/Home/">
   <meta property="og:image" content="https://tanishqchaturvedi.github.io/Home/assets/img/portrait.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/tanishk.png">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script type="application/ld+json">
@@ -31,277 +30,254 @@
     "worksFor": { "@type": "Organization", "name": "Fivetran" },
     "address": { "@type": "PostalAddress", "addressLocality": "Indore", "addressCountry": "IN" },
     "url": "https://tanishqchaturvedi.github.io/Home/",
-    "sameAs": ["https://www.linkedin.com/in/tanishkchaturvedi/", "https://github.com/tanishqchaturvedi", "https://topmate.io/tanishk_chaturvedi"],
-    "knowsAbout": ["Data Engineering", "Data Architecture", "Fivetran", "Databricks", "Snowflake", "BigQuery", "Model Context Protocol", "LLMs", "Change Data Capture"]
+    "sameAs": ["https://www.linkedin.com/in/tanishkchaturvedi/", "https://github.com/tanishqchaturvedi", "https://topmate.io/tanishk_chaturvedi"]
   }
   </script>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
 
-  <header class="nav" id="top">
-    <a href="#top" class="nav__logo" aria-label="Tanishk Chaturvedi — home">
-      <span class="mono-mark">TC</span>
-      <span class="nav__name">Tanishk Chaturvedi</span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
+  <header class="nav">
+    <a href="#top" class="nav__brand">Tanishk Chaturvedi</a>
+    <nav aria-label="Primary">
       <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#stack">Stack</a>
+      <a href="#career">Career</a>
       <a href="#contact">Contact</a>
+      <a href="Tanishk_Chaturvedi_CV.pdf" download>Résumé</a>
     </nav>
-    <a href="Tanishk_Chaturvedi_CV.pdf" class="btn btn--ghost btn--sm" download>Résumé <span aria-hidden="true">↓</span></a>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__text">
-        <p class="eyebrow reveal"><span class="dot"></span> Solutions Architect — Data &amp; AI · Fivetran</p>
-        <h1 class="hero__title reveal">
-          I build the data<br>
-          infrastructure<br>
-          <em>AI runs on.</em>
-        </h1>
-        <p class="hero__lede reveal">
-          5+ years designing enterprise data platforms across AWS, GCP and Azure — moving
-          petabyte-scale data out of legacy systems and into Snowflake, Databricks and BigQuery,
-          then wiring LLMs and MCP on top so teams can <strong>talk to their pipelines</strong>.
+    <!-- 1 · HERO ---------------------------------------------------->
+    <section class="hero" id="top" aria-label="Introduction">
+      <h1 class="sr-only">Tanishk Chaturvedi — Solutions Architect, Data &amp; AI at Fivetran</h1>
+      <p class="hero__back fit" aria-hidden="true" data-parallax="0.25">Tanishk</p>
+      <img class="hero__img" src="assets/img/tanishk.png" alt="Tanishk Chaturvedi, smiling" width="800" height="800" data-parallax="0.08">
+      <p class="hero__front fit" aria-hidden="true">Chaturvedi</p>
+
+      <div class="hero__meta hero__meta--l">
+        <p>Solutions Architect</p>
+        <p>Data &amp; AI — Fivetran</p>
+      </div>
+      <div class="hero__meta hero__meta--r">
+        <p>Indore, India</p>
+        <p>Building since 2021</p>
+      </div>
+    </section>
+
+    <!-- 2 · MANIFESTO ------------------------------------------------>
+    <section class="manifesto" aria-label="Manifesto">
+      <div class="manifesto__pin">
+        <p class="manifesto__text" data-words>
+          Every AI is only as good as the data beneath it. For five years I've built what's beneath it: the pipelines, platforms and plumbing that let the world's largest companies trust their data, and now, talk to it.
         </p>
-        <div class="hero__cta reveal">
-          <a href="#contact" class="btn btn--solid">Let's talk data <span aria-hidden="true">→</span></a>
-          <a href="#work" class="btn btn--ghost">See the work</a>
-        </div>
-      </div>
-
-      <figure class="hero__portrait reveal">
-        <img src="assets/img/portrait.jpg" alt="Portrait of Tanishk Chaturvedi" width="800" height="800" fetchpriority="high">
-        <figcaption>
-          <span class="tag"><span class="dot dot--live"></span> Indore, India</span>
-          <span class="tag">Databricks Certified Professional</span>
-        </figcaption>
-      </figure>
-    </section>
-
-    <!-- LOGOS / MARQUEE -->
-    <div class="marquee" aria-label="Platforms I work with">
-      <div class="marquee__track">
-        <span>Fivetran</span><span>Databricks</span><span>Snowflake</span><span>BigQuery</span><span>Redshift</span><span>dbt</span><span>Kafka</span><span>Spark</span><span>Airflow</span><span>MCP</span><span>SAP HANA</span><span>Oracle</span>
-        <span aria-hidden="true">Fivetran</span><span aria-hidden="true">Databricks</span><span aria-hidden="true">Snowflake</span><span aria-hidden="true">BigQuery</span><span aria-hidden="true">Redshift</span><span aria-hidden="true">dbt</span><span aria-hidden="true">Kafka</span><span aria-hidden="true">Spark</span><span aria-hidden="true">Airflow</span><span aria-hidden="true">MCP</span><span aria-hidden="true">SAP HANA</span><span aria-hidden="true">Oracle</span>
-      </div>
-    </div>
-
-    <!-- IMPACT -->
-    <section class="section impact" aria-labelledby="impact-h">
-      <h2 id="impact-h" class="label">Impact, in numbers</h2>
-      <div class="stats">
-        <div class="stat reveal">
-          <p class="stat__num"><span data-count="360">360</span><small>TB</small></p>
-          <p class="stat__txt">migrated from Snowflake to Databricks for Commerce IQ</p>
-        </div>
-        <div class="stat reveal">
-          <p class="stat__num"><span data-count="15">15</span><small>M→5K</small></p>
-          <p class="stat__txt">tables consolidated — a 99.97% reduction</p>
-        </div>
-        <div class="stat reveal">
-          <p class="stat__num"><span data-count="90">90</span><small>%</small></p>
-          <p class="stat__txt">lower latency with real-time CDC from Postgres to BigQuery</p>
-        </div>
-        <div class="stat reveal">
-          <p class="stat__num"><span data-count="50">50</span><small>%</small></p>
-          <p class="stat__txt">faster connector builds for Fivetran enterprise customers</p>
-        </div>
       </div>
     </section>
 
-    <!-- PIPELINE / WHAT I DO -->
-    <section class="section flow" aria-labelledby="flow-h">
-      <div class="section__head">
-        <h2 id="flow-h" class="label">What I do</h2>
-        <p class="section__title reveal">From <em>legacy source</em> to <em>AI‑ready</em>, end&nbsp;to&nbsp;end.</p>
-      </div>
-
-      <div class="pipeline reveal" id="pipeline" role="img" aria-label="Diagram: enterprise sources like SAP HANA, Oracle, SQL Server, PostgreSQL and Db2 flow through ingestion and CDC into Snowflake, Databricks, BigQuery and Redshift, which feed an AI layer powered by MCP and LLMs."></div>
-
-      <div class="pillars">
-        <article class="pillar reveal">
-          <p class="pillar__n">01 — Ingest</p>
-          <h3>Connectors &amp; real-time CDC</h3>
-          <p>Production-grade Python connectors on the Fivetran Connector SDK, and change-data-capture that replicates SAP HANA, Oracle, Db2 and Postgres in near real time.</p>
-        </article>
-        <article class="pillar reveal">
-          <p class="pillar__n">02 — Platform</p>
-          <h3>Lakehouse &amp; warehouse architecture</h3>
-          <p>Large migrations onto Databricks, Snowflake, BigQuery and Redshift — with dbt, Delta Live Tables, data-quality gates and governance built in from day one.</p>
-        </article>
-        <article class="pillar reveal">
-          <p class="pillar__n">03 — Intelligence</p>
-          <h3>AI on top of the data</h3>
-          <p>MCP servers, LLM prompt frameworks and AI developer tooling that let teams build and run data pipelines in plain language.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- FEATURED WORK -->
-    <section class="section work" id="work" aria-labelledby="work-h">
-      <div class="section__head">
-        <h2 id="work-h" class="label">Selected work</h2>
-        <p class="section__title reveal">Problems I've <em>solved</em> at scale.</p>
-      </div>
-
-      <div class="cases">
-        <article class="case case--feature reveal">
-          <div class="case__meta"><span>Fivetran</span><span>2025 — Now</span></div>
-          <h3>An MCP server that runs data pipelines from plain language</h3>
-          <p>Designed and deployed a Model Context Protocol server so engineers can create, inspect and orchestrate Fivetran workflows by asking an LLM. Paired it with prompt-engineering frameworks and reusable connector patterns that cut customer development time by 30–50%.</p>
-          <ul class="chips"><li>MCP</li><li>LLMs</li><li>Python</li><li>Connector SDK</li></ul>
-          <p class="case__metric"><strong>30–50%</strong> faster customer builds</p>
-        </article>
-
-        <article class="case reveal">
-          <div class="case__meta"><span>Koantek · Commerce IQ</span><span>2024</span></div>
-          <h3>360 TB, Snowflake → Databricks</h3>
-          <p>Worked on the migration of a 360 TB estate and cut 15 million tables down to 5,000 through careful consolidation.</p>
-          <ul class="chips"><li>Databricks</li><li>Delta Lake</li><li>Snowflake</li></ul>
-          <p class="case__metric"><strong>99.97%</strong> fewer tables</p>
-        </article>
-
-        <article class="case reveal">
-          <div class="case__meta"><span>Koantek</span><span>2024 — 25</span></div>
-          <h3>Led 8 engineers through a Redshift → Databricks move</h3>
-          <p>Rebuilt transformations on dbt and added fail-safe data-quality checks on Delta tables to block bad incremental loads.</p>
-          <ul class="chips"><li>dbt</li><li>Databricks</li><li>DLT</li></ul>
-          <p class="case__metric"><strong>40%</strong> fewer data inconsistencies</p>
-        </article>
-
-        <article class="case reveal">
-          <div class="case__meta"><span>Locad</span><span>2023</span></div>
-          <h3>Real-time CDC with Postgres → BigQuery</h3>
-          <p>Introduced Google Cloud Datastream for change-data-capture, orchestrated with dbt Core and Cloud Composer.</p>
-          <ul class="chips"><li>GCP</li><li>Datastream</li><li>Airflow</li></ul>
-          <p class="case__metric"><strong>90%</strong> lower latency</p>
-        </article>
-
-        <article class="case reveal">
-          <div class="case__meta"><span>Locad</span><span>2022</span></div>
-          <h3>A data platform built from scratch</h3>
-          <p>Designed the company's first data architecture: RDS → Redshift extraction plus Kafka + Spark streaming.</p>
-          <ul class="chips"><li>AWS</li><li>Kafka</li><li>Spark</li></ul>
-          <p class="case__metric"><strong>80%</strong> faster · <strong>$10K</strong> saved</p>
-        </article>
-      </div>
-
-      <div class="side">
-        <p class="label">Side projects</p>
-        <ul class="side__list">
-          <li><span>Real-time stock market streaming pipeline</span><span class="mono">Kafka · Spark</span></li>
-          <li><span>Hackathon — Trending data tools analysis</span><span class="mono">Fivetran · Snowflake · dbt · Power BI</span></li>
-          <li><span>Twitter API batch processing pipeline</span><span class="mono">Airflow · Python</span></li>
-        </ul>
+    <!-- 3 · NUMBERS -------------------------------------------------->
+    <section class="numbers" aria-label="Impact in numbers">
+      <div class="numbers__pin">
+        <p class="numbers__kicker">The record.</p>
+        <div class="numbers__track">
+          <article class="num">
+            <p class="num__big">360<span>TB</span></p>
+            <p class="num__cap">of data moved from Snowflake to Databricks for Commerce&nbsp;IQ.</p>
+          </article>
+          <article class="num">
+            <p class="num__big">99.97<span>%</span></p>
+            <p class="num__cap">fewer tables. Fifteen million consolidated into five thousand.</p>
+          </article>
+          <article class="num">
+            <p class="num__big">90<span>%</span></p>
+            <p class="num__cap">less latency once Postgres began streaming to BigQuery in real&nbsp;time.</p>
+          </article>
+          <article class="num">
+            <p class="num__big">50<span>%</span></p>
+            <p class="num__cap">faster connector builds for Fivetran's enterprise customers. Up to half the time.</p>
+          </article>
+          <article class="num">
+            <p class="num__big">8</p>
+            <p class="num__cap">engineers led through a full Redshift to Databricks migration.</p>
+          </article>
+        </div>
+        <div class="numbers__bar" aria-hidden="true"><span></span></div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section xp" id="experience" aria-labelledby="xp-h">
-      <div class="section__head">
-        <h2 id="xp-h" class="label">Experience</h2>
-        <p class="section__title reveal">Five years, four companies, <em>one through-line</em>: data that's fast and trustworthy.</p>
+    <!-- 4 · PIPELINE ------------------------------------------------->
+    <section class="path" aria-labelledby="path-h">
+      <div class="path__pin">
+        <header class="path__head">
+          <h2 id="path-h" class="display">Source<br>to signal.</h2>
+          <p class="lede">Most engineers own one stage of the data path. I architect all four, from a forty-year-old ERP to an LLM that answers in plain English.</p>
+        </header>
+        <ol class="stages">
+          <li class="stage">
+            <p class="stage__n">01</p>
+            <h3>Connect</h3>
+            <p>SAP HANA, Oracle, SQL Server, IBM Db2, PostgreSQL, MySQL.</p>
+          </li>
+          <li class="stage">
+            <p class="stage__n">02</p>
+            <h3>Move</h3>
+            <p>Fivetran Connector SDK, change data capture, Kafka, Datastream.</p>
+          </li>
+          <li class="stage">
+            <p class="stage__n">03</p>
+            <h3>Shape</h3>
+            <p>Databricks, Snowflake, BigQuery, Redshift. Modelled in dbt, guarded by data quality.</p>
+          </li>
+          <li class="stage">
+            <p class="stage__n">04</p>
+            <h3>Ask</h3>
+            <p>LLMs and MCP servers that let teams run their pipelines in plain language.</p>
+          </li>
+        </ol>
+        <div class="path__line" aria-hidden="true"><span></span></div>
       </div>
+    </section>
 
-      <ol class="roles">
-        <li class="role reveal">
-          <p class="role__when">Aug 2025 — Present</p>
-          <div>
-            <h3>Solutions Architect — Data &amp; AI (Enterprise)</h3>
-            <p class="role__co">Fivetran</p>
-            <ul>
-              <li>Built an MCP server for natural-language pipeline orchestration.</li>
-              <li>Designed custom connectors for SAP HANA, Oracle, SQL Server, Db2, Postgres and MySQL, landing data in Snowflake, BigQuery, Redshift and Databricks.</li>
-              <li>Shaped the Connector SDK roadmap with Product and Engineering; ran global enablement workshops.</li>
-            </ul>
+    <!-- 5 · WORK ----------------------------------------------------->
+    <section class="work" id="work" aria-labelledby="work-h">
+      <header class="sec-head">
+        <h2 id="work-h" class="display">Selected<br>work.</h2>
+        <p class="lede">Six problems, six results. Open any of them for the full story.</p>
+      </header>
+
+      <div class="index">
+        <details class="row">
+          <summary>
+            <span class="row__n">01</span>
+            <span class="row__t">Talk to your pipelines.</span>
+            <span class="row__m">−50%<small>build time</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">Fivetran · 2025 — Now</p>
+            <p>I designed and deployed a Model Context Protocol server that lets engineers create, inspect and orchestrate Fivetran pipelines by asking an LLM. Alongside it I built prompt-engineering frameworks and reusable connector patterns, now used in global enablement workshops. Customers build custom connectors in up to half the time.</p>
           </div>
-        </li>
-        <li class="role reveal">
-          <p class="role__when">Jan 2024 — Jul 2025</p>
-          <div>
-            <h3>Senior Data Engineer</h3>
-            <p class="role__co">Koantek Cloud AI</p>
-            <ul>
-              <li>Worked on Commerce IQ's 360 TB Snowflake → Databricks migration.</li>
-              <li>Led 8 engineers through a Redshift → Databricks migration on dbt (+20% efficiency).</li>
-              <li>Built a DLT data-quality dashboard for a billion-dollar utility company (+30% visibility).</li>
-            </ul>
-          </div>
-        </li>
-        <li class="role reveal">
-          <p class="role__when">Apr 2022 — Dec 2023</p>
-          <div>
-            <h3>Senior Data Engineer · Data Engineer</h3>
-            <p class="role__co">Locad</p>
-            <ul>
-              <li>Designed the data architecture from the ground up (80% performance gain).</li>
-              <li>Real-time CDC with Datastream (90% lower latency); dbt + Composer (25% faster ETL).</li>
-              <li>Kafka + Spark streaming saved 20 hours a week of manual processing; led the Metabase rollout.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="role reveal">
-          <p class="role__when">Jun 2021 — Apr 2022</p>
-          <div>
-            <h3>Cloud Data Engineer</h3>
-            <p class="role__co">NTT Data Services</p>
-            <ul>
-              <li>Migrated 5+ years of SAS data to PySpark (50% faster retrieval, 40 hrs/week saved).</li>
-              <li>CDC and delta-detection logic (60% faster); Oracle → Snowflake migration (25% faster queries).</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-    </section>
+        </details>
 
-    <!-- STACK -->
-    <section class="section stack" id="stack" aria-labelledby="stack-h">
-      <div class="section__head">
-        <h2 id="stack-h" class="label">Stack</h2>
-        <p class="section__title reveal">Tools I <em>reach for</em>.</p>
-      </div>
-      <div class="stack__grid">
-        <div class="stack__group reveal"><h3>AI &amp; Automation</h3><p>MCP · LLM prompt engineering · AI workflow automation · GitHub Copilot</p></div>
-        <div class="stack__group reveal"><h3>Data Platforms</h3><p>Fivetran Connector SDK · Databricks (DLT, Delta Lake) · Snowflake · BigQuery · Redshift · Hive</p></div>
-        <div class="stack__group reveal"><h3>ETL / ELT</h3><p>dbt · Airbyte · Matillion · Informatica · Prefect · Alteryx · Hevo</p></div>
-        <div class="stack__group reveal"><h3>Streaming &amp; Big Data</h3><p>Kafka · Spark / PySpark · Airflow · Hadoop</p></div>
-        <div class="stack__group reveal"><h3>Cloud</h3><p>AWS (S3, Glue, EMR, Lambda, Athena) · GCP (Datastream, Composer, Dataproc, Pub/Sub) · Azure</p></div>
-        <div class="stack__group reveal"><h3>Databases</h3><p>PostgreSQL · MySQL · Oracle · SAP HANA · SQL Server · Db2 · MongoDB · Cassandra · Neo4j</p></div>
-        <div class="stack__group reveal"><h3>BI</h3><p>Power BI · Tableau · Looker Studio · Metabase · QuickSight</p></div>
-        <div class="stack__group reveal"><h3>Languages</h3><p>Python · SQL</p></div>
-      </div>
-    </section>
+        <details class="row">
+          <summary>
+            <span class="row__n">02</span>
+            <span class="row__t">360 terabytes, rehomed.</span>
+            <span class="row__m">99.97%<small>fewer tables</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">Koantek · Commerce IQ · 2024</p>
+            <p>Commerce IQ moved its entire 360 TB estate from Snowflake to Databricks. By consolidating aggressively, we took fifteen million tables down to five thousand, which made the platform far cheaper to run and far easier to reason about.</p>
+          </div>
+        </details>
 
-    <!-- CREDENTIALS -->
-    <section class="section creds" aria-labelledby="creds-h">
-      <h2 id="creds-h" class="label">Credentials</h2>
-      <div class="creds__grid">
-        <div class="cred reveal"><p class="cred__k">Certification</p><p class="cred__v">Databricks Certified Data Engineer <strong>Professional</strong></p><p class="cred__d">May 2024</p></div>
-        <div class="cred reveal"><p class="cred__k">Certification</p><p class="cred__v">Databricks Certified Data Engineer <strong>Associate</strong></p><p class="cred__d">Jan 2024</p></div>
-        <div class="cred reveal"><p class="cred__k">Award</p><p class="cred__v">Locad Value Award</p><p class="cred__d">Apr 2023</p></div>
-        <div class="cred reveal"><p class="cred__k">Award</p><p class="cred__v">NTT Data Employee Excellence Award</p><p class="cred__d">Jan 2022</p></div>
-        <div class="cred reveal"><p class="cred__k">Education</p><p class="cred__v">M.Sc. Data Science — Chandigarh University</p><p class="cred__d">2022 — 2024</p></div>
-        <div class="cred reveal"><p class="cred__k">Education</p><p class="cred__v">B.Tech Computer Science — SVVV</p><p class="cred__d">2017 — 2021</p></div>
+        <details class="row">
+          <summary>
+            <span class="row__n">03</span>
+            <span class="row__t">Eight engineers. One migration.</span>
+            <span class="row__m">−40%<small>bad data</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">Koantek · 2024 — 2025</p>
+            <p>I led a team of eight through a Redshift to Databricks migration built on dbt, which made data 20% more accessible. I added fail-safe quality checks on Delta tables that stop a misconfigured incremental load before it reaches anyone's dashboard. I also built a Delta Live Tables monitoring dashboard for a billion-dollar utility company.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row__n">04</span>
+            <span class="row__t">Batch to real time.</span>
+            <span class="row__m">−90%<small>latency</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">Locad · 2023</p>
+            <p>I brought in Google Cloud Datastream to replicate PostgreSQL into BigQuery as changes happen, and moved transformation to dbt Core on Cloud Composer, which cut ETL time by 25%. Operations teams stopped waiting for yesterday's numbers.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row__n">05</span>
+            <span class="row__t">A data platform from zero.</span>
+            <span class="row__m">+80%<small>performance</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">Locad · 2022</p>
+            <p>I designed the company's first data architecture: RDS to Redshift extraction on AWS-native services, which saved around $10K in infrastructure, and Kafka with Spark streaming pipelines that removed 20 hours of manual work every week.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row__n">06</span>
+            <span class="row__t">Five years of legacy, rewritten.</span>
+            <span class="row__m">40h<small>saved weekly</small></span>
+          </summary>
+          <div class="row__body">
+            <p class="row__co">NTT Data · 2021 — 2022</p>
+            <p>I migrated more than five years of SAS workloads to PySpark, which made retrieval 50% faster and opened them up to real-time analytics. I also moved Oracle to Snowflake for Tableau and Cognos users and built change-data-capture logic that sped processing up by 60%.</p>
+          </div>
+        </details>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-labelledby="contact-h">
-      <p class="label">Contact</p>
-      <h2 id="contact-h" class="contact__title reveal">Got a messy data problem?<br><em>Let's untangle it.</em></h2>
-      <p class="contact__lede reveal">I'm open to talks on data architecture, AI-ready platforms, migrations and mentoring.</p>
-      <div class="contact__links reveal">
-        <a class="contact__mail" href="mailto:tanishkchaturvedi03@gmail.com">tanishkchaturvedi03@gmail.com <span aria-hidden="true">↗</span></a>
-        <div class="contact__row">
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/tanishkchaturvedi/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn btn--ghost" href="https://topmate.io/tanishk_chaturvedi" target="_blank" rel="noopener">Book a 1:1 on Topmate ↗</a>
-          <a class="btn btn--ghost" href="https://github.com/tanishqchaturvedi" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="btn btn--solid" href="Tanishk_Chaturvedi_CV.pdf" download>Download résumé ↓</a>
+    <!-- 6 · CAREER --------------------------------------------------->
+    <section class="career" id="career" aria-labelledby="career-h">
+      <header class="sec-head">
+        <h2 id="career-h" class="display">Career.</h2>
+        <p class="lede">Five years. Four companies. One through-line: data that's fast, and data you can trust.</p>
+      </header>
+
+      <dl class="spec">
+        <div class="spec__row"><dt>2025 — Now</dt><dd><strong>Fivetran</strong><span>Solutions Architect, Data &amp; AI (Enterprise)</span></dd></div>
+        <div class="spec__row"><dt>2024 — 2025</dt><dd><strong>Koantek Cloud AI</strong><span>Senior Data Engineer</span></dd></div>
+        <div class="spec__row"><dt>2022 — 2023</dt><dd><strong>Locad</strong><span>Data Engineer, promoted to Senior Data Engineer</span></dd></div>
+        <div class="spec__row"><dt>2021 — 2022</dt><dd><strong>NTT Data Services</strong><span>Cloud Data Engineer</span></dd></div>
+      </dl>
+
+      <div class="honours">
+        <div>
+          <h3>Certified</h3>
+          <ul>
+            <li>Databricks Data Engineer Professional <span>2024</span></li>
+            <li>Databricks Data Engineer Associate <span>2024</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recognised</h3>
+          <ul>
+            <li>Locad Value Award <span>2023</span></li>
+            <li>NTT Data Employee Excellence Award <span>2022</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Educated</h3>
+          <ul>
+            <li>M.Sc. Data Science, Chandigarh University <span>2024</span></li>
+            <li>B.Tech Computer Science, SVVV <span>2021</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · TOOLKIT -------------------------------------------------->
+    <section class="toolkit" aria-labelledby="tools-h">
+      <h2 id="tools-h" class="toolkit__k">Fluent in</h2>
+      <p class="toolkit__text">
+        <b>Python</b> <b>SQL</b> <b>Fivetran</b> <i>Databricks</i> <b>Snowflake</b> <i>BigQuery</i> Redshift <b>dbt</b> <i>Kafka</i> <b>Spark</b> Airflow <i>MCP</i> <b>LLMs</b> AWS <i>GCP</i> Azure <b>Delta&nbsp;Lake</b> Airbyte <i>Matillion</i> Informatica Prefect <i>SAP&nbsp;HANA</i> Oracle <b>PostgreSQL</b> MongoDB <i>Cassandra</i> Neo4j <b>Power&nbsp;BI</b> Tableau <i>Looker</i> Metabase
+      </p>
+    </section>
+
+    <!-- 8 · CONTACT -------------------------------------------------->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h" class="contact__title"><span class="fit">Let's build</span><span class="fit">what's beneath.</span></h2>
+      <div class="contact__grid">
+        <p class="lede">Data architecture, AI-ready platforms, migrations, or an hour of mentoring. If it's data, I'd like to hear about it.</p>
+        <div class="contact__links">
+          <a class="contact__mail" href="mailto:tanishkchaturvedi03@gmail.com">tanishkchaturvedi03@gmail.com</a>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/tanishkchaturvedi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://topmate.io/tanishk_chaturvedi" target="_blank" rel="noopener">Book a session</a></li>
+            <li><a href="https://github.com/tanishqchaturvedi" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="Tanishk_Chaturvedi_CV.pdf" download>Résumé (PDF)</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -309,8 +285,8 @@
 
   <footer class="footer">
     <p>© <span id="yr">2026</span> Tanishk Chaturvedi</p>
-    <p class="mono">Indore, IN · <span id="clock">--:--</span> IST</p>
-    <a href="#top">Back to top ↑</a>
+    <p>Indore <span id="clock"></span></p>
+    <a href="#top">Back to top</a>
   </footer>
 
   <script src="assets/js/main.js" defer></script>

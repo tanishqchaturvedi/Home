@@ -6,7 +6,7 @@ Plain static HTML, CSS and JS with no build step, served by GitHub Pages from `m
 
 - `index.html`: all page content
 - `assets/css/style.css`: design tokens and layout
-- `assets/js/main.js`: scroll reveals, counters, IST clock, and the animated pipeline diagram
+- `assets/js/main.js`: fit-to-width type, pinned scroll chapters, word-by-word manifesto, reveals, IST clock
 - `Tanishk_Chaturvedi_CV.pdf`: the downloadable résumé (replace this file to update it)
 
 Run it locally with `python3 -m http.server` and open http://localhost:8000.
