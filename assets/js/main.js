@@ -34,7 +34,7 @@
   });
 
   /* ---------- reveal on enter ---------- */
-  let pending = reduced ? [] : $$(".sec-head > *, .row, .spec__row, .honours > div, .contact__grid > *, .toolkit__text, .circle__row, .quote, .cstat, .cta");
+  let pending = reduced ? [] : $$(".sec-head > *, .row, .spec__row, .honours > div, .contact__grid > *, .toolkit__text, .circle__row, .quote, .cstat, .cta, .offer, .steps li, .proof__cell");
   pending.forEach((el, i) => { el.classList.add("rv"); el.style.transitionDelay = `${(i % 3) * 80}ms`; });
   const reveal = () => {
     if (!pending.length) return;
@@ -67,10 +67,12 @@
   const layout = () => {
     fit();
     if (reduced) return;
-    numbers.classList.add("is-pinned");
-    travel = track.scrollWidth - innerWidth;
-    numbers.style.height = `${innerHeight + travel}px`;
-    path.classList.toggle("is-pinned", wide.matches);
+    if (numbers) {
+      numbers.classList.add("is-pinned");
+      travel = track.scrollWidth - innerWidth;
+      numbers.style.height = `${innerHeight + travel}px`;
+    }
+    if (path) path.classList.toggle("is-pinned", wide.matches);
     frame();
   };
 
@@ -79,7 +81,7 @@
     reveal();
     const y = scrollY;
 
-    if (y < hero.offsetHeight) {
+    if (hero && y < hero.offsetHeight) {
       parallax.forEach((el) => {
         const k = +el.dataset.parallax;
         const base = el.classList.contains("hero__img") ? "translateX(-50%) " : "";
@@ -87,15 +89,19 @@
       });
     }
 
+    if (manifesto) {
     const pm = progress(manifesto);
     const lit = pm * 1.15 * words.length;
     words.forEach((w, i) => { w.style.opacity = 0.14 + 0.86 * clamp(lit - i); });
+    }
 
-    const pn = progress(numbers);
-    track.style.transform = `translate3d(${-pn * travel}px, 0, 0)`;
-    nbar.style.transform = `scaleX(${pn})`;
+    if (numbers) {
+      const pn = progress(numbers);
+      track.style.transform = `translate3d(${-pn * travel}px, 0, 0)`;
+      nbar.style.transform = `scaleX(${pn})`;
+    }
 
-    if (path.classList.contains("is-pinned")) {
+    if (path && path.classList.contains("is-pinned")) {
       const pp = clamp(progress(path) * 1.25);
       pline.style.transform = `scaleX(${pp})`;
       stages.forEach((s, i) => s.classList.toggle("on", pp >= i / stages.length + 0.02));
@@ -118,9 +124,10 @@
   addEventListener("load", layout);
 
   /* ---------- footer ---------- */
-  $("#yr").textContent = new Date().getFullYear();
+  const yr = $("#yr"); if (yr) yr.textContent = new Date().getFullYear();
   const fmt = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kolkata" });
-  const tick = () => ($("#clock").textContent = fmt.format(new Date()));
+  const clockEl = $("#clock");
+  const tick = () => { if (clockEl) clockEl.textContent = fmt.format(new Date()); };
   tick();
   setInterval(tick, 30000);
 })();
