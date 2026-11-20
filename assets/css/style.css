@@ -457,7 +457,3 @@ ul, ol { list-style: none; padding: 0; }
 @media (max-width: 640px) {
   .steps ol { grid-template-columns: 1fr; }
 }
-.wa-link { font-weight: 600; font-size: 17px; width: fit-content; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1.5px no-repeat; padding-bottom: 3px; transition: background-size .5s var(--ease); }
-.wa-link:hover { background-size: 0 1.5px; background-position: 100% 100%; }
-.offers__note a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
-.offer__buy .btn-book { white-space: nowrap; }
