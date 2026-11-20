@@ -457,3 +457,47 @@ ul, ol { list-style: none; padding: 0; }
 @media (max-width: 640px) {
   .steps ol { grid-template-columns: 1fr; }
 }
+
+/* 3b · raw to ready (3D) -------------------------------------- */
+.flow { background: var(--ink); color: var(--paper); position: relative; }
+.flow__pin { position: relative; padding: clamp(100px, 12vw, 180px) var(--g); }
+.flow__stage { display: none; }
+.flow__title {
+  font-stretch: 62%; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(56px, 8vw, 132px); line-height: 0.82; position: relative; z-index: 2;
+}
+.flow__caps { display: grid; gap: 28px; margin-top: 56px; position: relative; z-index: 2; }
+.flow__cap { font-size: clamp(20px, 2vw, 30px); line-height: 1.2; letter-spacing: -0.02em; max-width: 26ch; }
+.flow__cap span { display: block; font-size: 15px; letter-spacing: 0; color: var(--ash); margin-bottom: 8px; }
+
+/* With WebGL: a pinned, full-screen scene */
+.flow.is-3d { height: 300svh; }
+.flow.is-3d .flow__pin { position: sticky; top: 0; height: 100svh; overflow: hidden; padding: 0; }
+.flow.is-3d .flow__stage { display: block; position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s var(--ease); }
+.flow.is-ready .flow__stage { opacity: 1; }
+.flow__stage canvas { width: 100% !important; height: 100% !important; display: block; }
+.flow.is-3d .flow__title { position: absolute; top: clamp(84px, 12svh, 130px); left: var(--g); }
+.flow.is-3d .flow__caps { position: absolute; left: var(--g); bottom: clamp(40px, 9svh, 90px); margin: 0; display: block; }
+.flow.is-3d .flow__cap {
+  position: absolute; left: 0; bottom: 0; width: min(26ch, calc(100vw - 2 * var(--g)));
+  opacity: 0; transform: translateY(14px); transition: opacity .6s var(--ease), transform .8s var(--ease);
+}
+.flow.is-3d .flow__cap.on { opacity: 1; transform: none; }
+@media (max-width: 640px) {
+  .flow.is-3d .flow__title { font-size: 48px; }
+}
+
+/* 5b · open source -------------------------------------------- */
+.oss { max-width: var(--max); margin: 0 auto; padding: clamp(110px, 14vw, 220px) var(--g) 0; }
+.oss__list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; border-top: 1px solid var(--ink); }
+.oss__list a {
+  display: grid; grid-template-columns: 1fr auto 24px; align-items: baseline; gap: 16px;
+  padding: 22px 0; border-bottom: 1px solid var(--rule);
+}
+.oss__name { font-size: clamp(22px, 2.2vw, 32px); font-weight: 700; font-stretch: 85%; letter-spacing: -0.025em; transition: transform .5s var(--ease); }
+.oss__cat { font-size: 14px; color: var(--stone); text-align: right; }
+.oss__arrow { color: var(--stone); transition: transform .4s var(--ease), color .3s; }
+.oss__list a:hover .oss__name { transform: translateX(8px); }
+.oss__list a:hover .oss__arrow { transform: translate(3px, -3px); color: var(--ink); }
+.oss__more { display: inline-block; margin-top: 28px; font-weight: 600; font-size: 17px; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1.5px no-repeat; padding-bottom: 3px; }
+@media (max-width: 900px) { .oss__list { grid-template-columns: 1fr; } }

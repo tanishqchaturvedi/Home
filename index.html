@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/tanishk.png">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/src/styles/style.css">
 
   <script type="application/ld+json">
   {
@@ -30,7 +30,7 @@
     "worksFor": { "@type": "Organization", "name": "Fivetran" },
     "address": { "@type": "PostalAddress", "addressCountry": "IN" },
     "url": "https://tanishqchaturvedi.github.io/Home/",
-    "sameAs": ["https://www.linkedin.com/in/tanishkchaturvedi/", "https://github.com/tanishqchaturvedi", "https://topmate.io/tanishk_chaturvedi"]
+    "sameAs": ["https://www.linkedin.com/in/tanishkchaturvedi/", "https://github.com/tanishqchaturvedi", "https://github.com/fivetran-tanishk", "https://topmate.io/tanishk_chaturvedi"]
   }
   </script>
 </head>
@@ -155,6 +155,25 @@
       </div>
     </section>
 
+    <!-- 5b · OPEN SOURCE ---------------------------------------------->
+    <section class="oss" aria-labelledby="oss-h">
+      <header class="sec-head">
+        <h2 id="oss-h" class="display">In the<br>open.</h2>
+        <p class="lede">Eight connectors I've written, had reviewed and seen merged into Fivetran's public repositories. Real enterprise systems, in production-grade Python.</p>
+      </header>
+      <ul class="oss__list">
+          <li><a href="https://github.com/fivetran/community_connectors/pull/69" target="_blank" rel="noopener"><span class="oss__name">Meta Lead Ads</span><span class="oss__cat">Marketing</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/70" target="_blank" rel="noopener"><span class="oss__name">Oracle Primavera P6</span><span class="oss__cat">Project controls</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/71" target="_blank" rel="noopener"><span class="oss__name">TechOne CiAnywhere</span><span class="oss__cat">ERP</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/74" target="_blank" rel="noopener"><span class="oss__name">ADP Workforce Now</span><span class="oss__cat">HR &amp; payroll</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/75" target="_blank" rel="noopener"><span class="oss__name">Emplifi</span><span class="oss__cat">Social analytics</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/88" target="_blank" rel="noopener"><span class="oss__name">Sopheon Accolade</span><span class="oss__cat">Innovation management</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/community_connectors/pull/89" target="_blank" rel="noopener"><span class="oss__name">Investran Report Wizard</span><span class="oss__cat">Private equity</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/fivetran/connector_sdk/pull/286" target="_blank" rel="noopener"><span class="oss__name">AWS RDS Oracle</span><span class="oss__cat">Database · Connector SDK</span><span class="oss__arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+      <a class="oss__more" href="https://github.com/fivetran-tanishk" target="_blank" rel="noopener">github.com/fivetran-tanishk ↗</a>
+    </section>
+
     <!-- 6c · VOICES ------------------------------------------------->
     <section class="voices" aria-labelledby="voices-h">
       <header class="sec-head">
@@ -211,6 +230,19 @@
           </article>
         </div>
         <div class="numbers__bar" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- 3b · RAW TO READY (3D) ------------------------------------->
+    <section class="flow" aria-labelledby="flow-h">
+      <div class="flow__pin">
+        <div class="flow__stage" aria-hidden="true"></div>
+        <h2 id="flow-h" class="flow__title">Raw<br>to ready.</h2>
+        <ol class="flow__caps">
+          <li class="flow__cap" data-from="-1" data-to="0.3"><span>01 · Raw</span>Five systems. Five formats. No agreement on anything.</li>
+          <li class="flow__cap" data-from="0.3" data-to="0.62"><span>02 · Moved</span>Captured as it changes, through one governed pipe.</li>
+          <li class="flow__cap" data-from="0.62" data-to="2"><span>03 · Ready</span>Bronze, silver, gold. Modelled, trusted, and ready for AI to question.</li>
+        </ol>
       </div>
     </section>
 
@@ -337,6 +369,7 @@
             <li><a href="https://www.linkedin.com/in/tanishkchaturvedi/" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="book.html">Book a 1:1 session</a></li>
             <li><a href="https://github.com/tanishqchaturvedi" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://github.com/fivetran-tanishk" target="_blank" rel="noopener">GitHub (Fivetran)</a></li>
             <li><a href="Tanishk_Chaturvedi_CV.pdf" download>Résumé (PDF)</a></li>
           </ul>
         </div>
@@ -350,6 +383,6 @@
     <a href="#top">Back to top</a>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
