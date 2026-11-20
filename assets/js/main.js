@@ -34,7 +34,7 @@
   });
 
   /* ---------- reveal on enter ---------- */
-  let pending = reduced ? [] : $$(".sec-head > *, .row, .spec__row, .honours > div, .contact__grid > *, .toolkit__text");
+  let pending = reduced ? [] : $$(".sec-head > *, .row, .spec__row, .honours > div, .contact__grid > *, .toolkit__text, .circle__row, .quote, .cstat, .cta");
   pending.forEach((el, i) => { el.classList.add("rv"); el.style.transitionDelay = `${(i % 3) * 80}ms`; });
   const reveal = () => {
     if (!pending.length) return;
@@ -120,7 +120,7 @@
   /* ---------- footer ---------- */
   $("#yr").textContent = new Date().getFullYear();
   const fmt = new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Asia/Kolkata" });
-  const tick = () => ($("#clock").textContent = `${fmt.format(new Date())} IST`);
+  const tick = () => ($("#clock").textContent = fmt.format(new Date()));
   tick();
   setInterval(tick, 30000);
 })();
